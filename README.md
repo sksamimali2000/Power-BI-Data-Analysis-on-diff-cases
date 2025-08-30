@@ -1,16 +1,4 @@
-### 🔹 Data Model (Star Schema)  
-![Data Model](images/model.png)
-
-### 🔹 Currency-wise Sales Breakdown  
-![Currency Report](images/currency_report.png)
-
-### 🔹 Monthly Sales Trend  
-![Monthly Trend](images/monthly_trend.png)
-
-### 🔹 Customer-Level Revenue Contribution  
-![Customer Breakdown](images/customer_breakdown.png)
-
-📊 Power BI Sales Analysis Dashboard
+📊 ***Power BI Sales Analysis Dashboard***
 
 🚀 End-to-end Power BI Analytics Project built from scratch – from raw data preprocessing → DAX modeling → stunning dashboards.
 This project analyzes global sales data across multiple currencies, customers, and timelines to deliver actionable business insights.
@@ -27,7 +15,7 @@ Cleaned and transformed large datasets for analysis-ready format.
 
 ✨ Dynamic Date Dimension with DAX
 
-dim_Date = ADDCOLUMNS( 
+***dim_Date = ADDCOLUMNS( 
     CALENDAR(MIN(fact_InternetSales[ShipDate]), MAX(fact_InternetSales[ShipDate])),
     "Year", YEAR([Date]),
     "Month", MONTH([Date]),
@@ -35,7 +23,7 @@ dim_Date = ADDCOLUMNS(
     "Day of Week", FORMAT([Date], "DDDD"),
     "Quarter", FORMAT([Date], "Q"),
     "YearQuarter", FORMAT([Date], "YYYY") & "/Q" & FORMAT([Date], "Q")
-)
+)***
 
 
 ✨ Visual Dashboards
@@ -44,13 +32,18 @@ dim_Date = ADDCOLUMNS(
 
 📅 Monthly Sales Trend – Seasonal insights across 12 months with strong Q4 performance.
 
+![Currency Report]:
+ https://github.com/sksamimali2000/Power-BI-Data-Analysis-on-diff-cases/blob/main/Sales%20Amount%2C%20CurrencyAlternatekey%20sorted%20by%20currency%20name.jpg
+
 👥 Customer-Level Analysis – Revenue contribution broken down by individual customers.
+Customer-Level Revenue Contribution:
+https://github.com/sksamimali2000/Power-BI-Data-Analysis-on-diff-cases/blob/main/Sales%20Amount%2C%20Currency%20key%20by%20email.jpg
 
 📊 KPI Highlights – Total Sales, Currency distribution, and Month-over-Month growth.
 
 📸 Project Snapshots
 🔹 Data Model (Star Schema)
-
+### 🔹 Data Model (Star Schema): https://github.com/sksamimali2000/Power-BI-Data-Analysis-on-diff-cases/blob/main/Scema.jpg  
 Efficient schema connecting Fact & Dimension tables.
 
 
